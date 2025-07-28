@@ -93,7 +93,7 @@ const NameGenerator = () => {
         'sílna Gol', 'sílna Lence', 
         'sína Cóst', 'sína Cymainé', 'sína Lans', 'sína Dameston', 'sína Dhanvar', 'sína Gabciobis', 'sína Lakebór', 'sína Pantheonia', 'sína Petagvar', 'sína Pírgab', 'sína Pírrahe of Steepcliff'
       ]
-    // },
+      },
     // japanese: {
     //   female: [
     //     'Sakura', 'Yuki', 'Akiko', 'Emiko', 'Mayumi', 'Naomi', 'Haruka', 'Michiko',
@@ -207,9 +207,9 @@ const NameGenerator = () => {
     // }
   };
 
-  // Function to generate random names based on user selections
+  // Function to generate random names based on user selection
   const generateName = () => {
-    // Get the appropriate name arrays based on user choices
+    // Get the appropriate name arrays based on user choice
     const firstNames = nameDatabase[selectedCulture][selectedGender];
     const surnames = nameDatabase[selectedSurnameCulture][selectedSocialClass];
     
