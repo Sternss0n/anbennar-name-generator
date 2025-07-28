@@ -1,0 +1,43 @@
+{
+  "name": "anbennar_random_name_generator",
+  "version": "1.0.0",
+  "description": "A cultural name generator desktop app",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "build-electron": "npm run build && electron .",
+    "dist": "npm run build && electron-builder",
+    "pack": "electron-builder --dir"
+  },
+  "keywords": ["electron", "react", "name-generator"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.4.0",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.yourname.namegenerator",
+    "productName": "Name Generator",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
