@@ -93,7 +93,7 @@ const NameGenerator = () => {
         'sílna Gol', 'sílna Lence', 
         'sína Cóst', 'sína Cymainé', 'sína Lans', 'sína Dameston', 'sína Dhanvar', 'sína Gabciobis', 'sína Lakebór', 'sína Pantheonia', 'sína Petagvar', 'sína Pírgab', 'sína Pírrahe of Steepcliff'
       ]
-      },
+    },
     // japanese: {
     //   female: [
     //     'Sakura', 'Yuki', 'Akiko', 'Emiko', 'Mayumi', 'Naomi', 'Haruka', 'Michiko',
